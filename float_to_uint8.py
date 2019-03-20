@@ -1,10 +1,10 @@
 
 # Taken from imageio/imageio
 
+def convert_float_to_uint8(im, bitdepth=8):
 """"
 Converts a float image to uint8 using the min & max value
 """"
-def convert_float_to_uint8(im, bitdepth=8):
     if bitdepth == 8:
         out_type = np.uint8
     elif bitdepth == 16:
